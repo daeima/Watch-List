@@ -1,4 +1,7 @@
-<%= simple_form_for [ @list ] do |f| %>
-  <%= f.input :name %>
-  <%= f.submit "Create list", class: "btn btn-primary" %>
-<% end %>
+
+<div class="container" style="margin-top: 120px;">
+  <%= simple_form_for [ @list ] do |f| %>
+    <%= f.input :name %>
+    <%= f.submit "Create list", class: "btn btn-primary" %>
+  <% end %>
+</div>

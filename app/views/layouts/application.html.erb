@@ -14,14 +14,16 @@
 
   <body>
 
-  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-    <div class="logo">
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
+      <div class="logo navbar-brand">
+        <%= image_tag "logo.jpg", alt: "Logo", class: "rounded-circle"%>
+      </div>
+      <div>
+        <%= link_to "My Lists", lists_path %> |
+        <%= link_to "New List", new_list_path %>
+      </div>
     </div>
-    <%= link_to "New List", new_list_path %>
-  </div>
-  <div class="home-banner">
-    <h1><span id="banner-typed-text"></span></h1>
-  </div>
-    <%= yield %>
+
+      <%= yield %>
   </body>
 </html>
